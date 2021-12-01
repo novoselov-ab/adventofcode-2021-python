@@ -1,2 +1,8 @@
-# adventofcode-2021-python
-Advent of Code 2021
+# Advent of Code 2021 in python
+
+Run as:
+
+```
+python 1.py
+```
+
