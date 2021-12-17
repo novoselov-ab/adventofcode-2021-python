@@ -15,7 +15,7 @@ with open("15.txt") as f:
         def step():
             for y in range(h * wraps):
                 for x in range(w * wraps):
-                    v = grid[y % h][x % w] +  y // h + x // w
+                    v = grid[y % h][x % w] + y // h + x // w
                     v = 9 if v % 9 == 0 else v % 9
                     dp[(y, x)] = v + min(
                         dp.get((y - 1, x), B), dp.get((y, x - 1), B), dp.get((y + 1, x), B), dp.get((y, x + 1), B)
